@@ -4,8 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>マイページ | Salus製薬株式会社_admin</title>
+
+    <!-- <link rel="icon" sizes="any" href="favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="./icon.svg">
+    <link rel="apple-touch-icon" href="./apple-icon.png">
+    <link rel="manifest" href="/manifest.json"> -->
+    <link rel="stylesheet" href="./css/foundations.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/object.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-    
+    <div class="l-grid">
+
+        <header class="l-header  p-grid p-grid__header df">
+            <div class="p-nav">
+                <nav class="p-nav__header">
+                    <ul class="df">
+                        <a href="">
+                            <li>
+                                <span class="material-icons">mail_outline</span>
+                            </li>    
+                        </a>
+                        <li class="df">
+                            <span class="material-icons c-icon c-icon--account">account_circle</span>
+                            <div>野村裕子</div>
+                        </li>
+                    </ul>
+                </nav>    
+            </div>
+        </header>
+
+        <nav class="p-menu p-grid p-grid__menu">
+            <div class="p-menu__logo">
+                <a href="">
+                    <h1>
+                        <img src="./img/salus-logo.svg" alt="Salus製薬株式会社">
+                    </h1>    
+                </a>
+            </div>
+            <ul class="p-menu__list">
+                <a href="">
+                    <li class="df">
+                        <span class="material-icons">home</span>
+                        <div>マイページ</div>
+                    </li>    
+                 </a>
+                <a href="">
+                    <li class="df">
+                        <span class="material-icons">edit</span>
+                        <div>編集</div>
+                        <span class="material-icons">expand_more</span>
+                    </li>
+                </a>
+                <a href="">
+                    <li class="df">
+                        <span class="material-icons">add_circle</span>
+                        <div>新規作成</div>
+                        <span class="material-icons">expand_more</span>
+                    </li>
+                </a>
+             </ul>
+        </nav>
+
+        <main class="p-grid p-grid__mypage">
+            <section>
+                <div>
+                    <div>
+                        <h2>マイページ</h2>
+                    </div>
+                    <div>
+                        <h3>最新の通知</h3>
+                        <ul>
+                            <li>
+                                <div>2022/06/21</div>
+                                <div>てすとtestてすとてすとtestてすとてすとtestてすとてすとtestてすとてすとtestてすとてすとtestてすと</div>
+                            </li>
+                            <li>
+                                <div>2022/06/21</div>
+                                <div>てすとtestてすとてすとtestてすとてすとtestてすとてすとtestてすとてすとtestてすとてすとtestてすと</div>
+                            </li>
+                            <li>
+                                <div>2022/06/21</div>
+                                <div>てすとtestてすとてすとtestてすとてすとtestてすとてすとtestてすとてすとtestてすとてすとtestてすと</div>
+                            </li>
+                            <li>
+                                <div>2022/06/21</div>
+                                <div>てすとtestてすとてすとtestてすとてすとtestてすとてすとtestてすとてすとtestてすとてすとtestてすと</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="p-grid p-grid__footer">
+            <div>
+                <small>&copy; 2022 Iwase Shiho</small>
+            </div>
+        </footer>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </body>
 </html>

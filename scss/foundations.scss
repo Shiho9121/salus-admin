@@ -1,1 +1,4 @@
 //foundations
+@use "./foundations/base" as *;
+@use "./foundations/reset" as *;
+@use "./foundations/responsive" as *;

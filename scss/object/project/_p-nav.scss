@@ -1,0 +1,14 @@
+.p-nav {
+    &__header {
+        ul {
+            justify-content: flex-end;
+            a {
+                margin-right: 2rem;
+            }
+            li {
+                margin: 1.5rem 0;
+                align-items: center;
+            }
+        }
+    }
+}

@@ -1,8 +1,11 @@
-//component
-
-//project
-//loading
-
-
 //utility
 @use "./object/utility/u-emmet" as *;
+
+//project
+@use "./object/project/p-nav" as *;
+@use "./object/project/p-menu" as *;
+@use "./object/project/p-grid" as *;
+//loading
+
+//component
+@use "./object/component/c-icon" as *;
