@@ -25,7 +25,16 @@
 }
 .p-menu__list {
   display: inline-block;
-  margin: 2rem 0.5rem 0 1rem;
+  margin-top: 2rem;
+  width: 100%;
+  font-size: 1.3rem;
+}
+.p-menu__list a {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 2.5rem;
+  padding-left: 1rem;
+  padding-right: 0.5rem;
 }
 .p-menu__list a li {
   align-items: center;
@@ -55,4 +64,7 @@
 
 .c-icon--account {
   margin-right: 1rem;
+}
+.c-icon--menu {
+  margin-left: auto;
 }
