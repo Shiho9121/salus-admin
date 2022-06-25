@@ -16,20 +16,20 @@
         margin-top: 2rem;
         width: 100%;
         font-size: 1.3rem;
-        a {
-            display: inline-block;
-            width: 100%;
-            margin-bottom: 2.5rem;
-            padding-left: 1rem;
-            padding-right: .5rem;
-            li {
-                align-items: center;
-                span {
-                    &:first-of-type {
-                        margin-right: 1rem;
-                    }
-                }
-            }
+        li {
+            a {
+                display: inline-block;
+                width: 100%;
+                margin-bottom: 2.5rem;
+                padding-left: 1rem;
+                padding-right: .5rem;
+            }    
         }
+    }
+    &__accordion {
+        margin-bottom: 2.5rem;
+        padding-left: 1rem;
+        padding-right: .5rem;
+        cursor: pointer;
     }
 }

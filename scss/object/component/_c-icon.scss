@@ -5,4 +5,50 @@
     &--menu {
         margin-left: auto;
     }
+    &--mypage {
+        &::before {
+            font-family: 'Material Icons';
+            font-size: 1.5rem;
+            content: '\e88a';
+            margin-right: 1rem;
+            position: relative;
+            top: 3.5px;
+        }
+    }
+    &--edit {
+        &::before {
+            font-family: 'Material Icons';
+            font-size: 1.5rem;
+            content: '\e3c9';
+            margin-right: 1rem;
+            position: relative;
+            top: 3.5px;
+        }
+        &::after {
+            font-family: 'Material Icons';
+            font-size: 1.5rem;
+            content: '\e5cf';
+            position: relative;
+            top: 4px;
+            left: 96px;
+        }
+    }
+    &--add {
+        &::before {
+            font-family: 'Material Icons';
+            font-size: 1.5rem;
+            content: '\e147';
+            margin-right: 1rem;
+            position: relative;
+            top: 3.5px;
+        }
+        &::after {
+            font-family: 'Material Icons';
+            font-size: 1.5rem;
+            content: '\e5cf';
+            position: relative;
+            top: 4px;
+            left: 54px;
+        }
+    }
 }

@@ -2,8 +2,10 @@
 @use "./object/utility/u-emmet" as *;
 
 //project
+//menu
 @use "./object/project/p-nav" as *;
 @use "./object/project/p-menu" as *;
+@use "./object/project/p-menu-sub" as *;
 @use "./object/project/p-grid" as *;
 //loading
 
