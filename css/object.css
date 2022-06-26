@@ -27,6 +27,7 @@
   margin-top: 2rem;
   width: 100%;
   font-size: 1.3rem;
+  font-weight: 500;
 }
 .p-menu__list > li:first-of-type {
   margin-bottom: 2.5rem;
@@ -47,6 +48,11 @@
   padding-left: 1rem;
   padding-right: 0.5rem;
   cursor: pointer;
+  transition: 0.3s;
+}
+.p-menu__accordion:hover {
+  color: #8CDBFF;
+  transition: 0.3s;
 }
 
 .p-menu-sub {
@@ -61,6 +67,7 @@
   transition: 0.3s;
 }
 .p-menu-sub li:hover {
+  font-weight: bold;
   color: #8CDBFF;
   border-left: 8px solid #8CDBFF;
   transition: 0.3s;
@@ -75,7 +82,7 @@
   font-size: 1.5rem;
   content: "\e5cc";
   position: absolute;
-  top: 24%;
+  top: 20%;
   right: 16px;
 }
 
@@ -103,6 +110,13 @@
 }
 .c-icon--menu {
   margin-left: auto;
+}
+.c-icon--mypage {
+  transition: 0.3s;
+}
+.c-icon--mypage:hover {
+  color: #8CDBFF;
+  transition: 0.3s;
 }
 .c-icon--mypage::before {
   font-family: "Material Icons";

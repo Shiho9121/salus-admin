@@ -8,6 +8,7 @@
         position: relative;
         transition: .3s;
         &:hover {
+            font-weight: bold;
             color: #8CDBFF;
             border-left: 8px solid #8CDBFF;
             transition: .3s;
@@ -22,7 +23,7 @@
                     font-size: 1.5rem;
                     content: '\e5cc';
                     position: absolute;
-                    top: 24%;
+                    top: 20%;
                     right: 16px;
                 }
             }

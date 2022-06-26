@@ -6,6 +6,11 @@
         margin-left: auto;
     }
     &--mypage {
+        transition: .3s;
+        &:hover {
+            color: #8CDBFF;
+            transition: .3s;
+        }
         &::before {
             font-family: 'Material Icons';
             font-size: 1.5rem;

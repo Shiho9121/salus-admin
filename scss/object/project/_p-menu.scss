@@ -16,6 +16,7 @@
         margin-top: 2rem;
         width: 100%;
         font-size: 1.3rem;
+        font-weight: 500;
         & > {
             li {
                 &:first-of-type {
@@ -40,5 +41,10 @@
         padding-left: 1rem;
         padding-right: .5rem;
         cursor: pointer;
+        transition: .3s;
+        &:hover {
+            color: #8CDBFF;
+            transition: .3s;
+        }
     }
 }
