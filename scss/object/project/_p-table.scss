@@ -1,0 +1,63 @@
+.p-table {
+    margin-top: 2rem;
+    table {
+        width: 100%;
+    }
+    input[type=checkbox] {
+        width: 1rem;
+        height: 1rem;
+    }
+    th {
+        background-color: #C9CDD0;
+        font-weight: 500;
+        padding: 1rem 0;
+        position: relative;
+        &:nth-of-type(1) {
+            padding: 1rem;
+            text-align: center;
+            &::after {
+                content:"";
+                display: inline-block;
+                width: 1.5px;
+                height: 36px;
+                background-color: #BDBEBF;
+                position: absolute;
+                top: 8px;
+                right: 0;
+                z-index: 1;
+            }
+        }
+        &:nth-of-type(n+2):nth-child(-n+5) {
+            padding-left: 1rem;
+            &::after {
+                content:"";
+                display: inline-block;
+                width: 1.5px;
+                height: 36px;
+                background-color: #BDBEBF;
+                position: absolute;
+                top: 8px;
+                right: 0;
+                z-index: 1;
+            }
+        }
+    }
+    td {
+        padding: 2rem 0;
+        background-color: #ffffff;
+        &:nth-of-type(1) {
+            padding: auto 1rem;
+            text-align: center;
+        }
+        &:nth-of-type(n+2):nth-child(-n+6) {
+            padding-left: 1rem;
+        }
+        a {
+            &::before {
+                font-family: 'Material Icons';
+                font-size: 1.5rem;
+                content: '\e3c9';
+            }
+        }
+    }
+}

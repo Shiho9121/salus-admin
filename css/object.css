@@ -96,7 +96,7 @@
   grid-row: 1/2;
   grid-column: 2/3;
 }
-.p-grid__mypage {
+.p-grid__mypage, .p-grid__edit {
   grid-row: 2/3;
   grid-column: 2/3;
 }
@@ -126,6 +126,119 @@
 }
 .p-notification ul li div:first-child {
   margin-right: 2rem;
+}
+
+.p-edit {
+  margin-top: 2rem;
+  align-items: end;
+}
+.p-edit__pull-down-list {
+  border: 1px solid #C4C2C2;
+  background-color: #ffffff;
+  border-radius: 2px;
+  width: 6.5rem;
+  height: 2rem;
+  margin-right: 1.5rem;
+}
+.p-edit__pull-down-list select {
+  background-image: url(../img/arrow-select.svg);
+  background-position: right 0px center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 2rem;
+  padding: 0 0.5rem;
+  cursor: pointer;
+}
+.p-edit__search {
+  width: 15rem;
+}
+.p-edit__search input {
+  border: 1px solid #C4C2C2;
+  background-color: #ffffff;
+  border-radius: 16px;
+  width: 100%;
+  height: 2rem;
+  padding: 0 0.5rem;
+}
+.p-edit__delet {
+  margin-left: auto;
+}
+.p-edit__delet a {
+  background-color: #EA6969;
+  color: #ffffff;
+  font-weight: bold;
+  width: 6.5rem;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+.p-edit__delet a::before {
+  font-family: "Material Icons";
+  font-size: 1.5rem;
+  content: "\e872";
+}
+
+.p-table {
+  margin-top: 2rem;
+}
+.p-table table {
+  width: 100%;
+}
+.p-table input[type=checkbox] {
+  width: 1rem;
+  height: 1rem;
+}
+.p-table th {
+  background-color: #C9CDD0;
+  font-weight: 500;
+  padding: 1rem 0;
+  position: relative;
+}
+.p-table th:nth-of-type(1) {
+  padding: 1rem;
+  text-align: center;
+}
+.p-table th:nth-of-type(1)::after {
+  content: "";
+  display: inline-block;
+  width: 1.5px;
+  height: 36px;
+  background-color: #BDBEBF;
+  position: absolute;
+  top: 8px;
+  right: 0;
+  z-index: 1;
+}
+.p-table th:nth-of-type(n+2):nth-child(-n+5) {
+  padding-left: 1rem;
+}
+.p-table th:nth-of-type(n+2):nth-child(-n+5)::after {
+  content: "";
+  display: inline-block;
+  width: 1.5px;
+  height: 36px;
+  background-color: #BDBEBF;
+  position: absolute;
+  top: 8px;
+  right: 0;
+  z-index: 1;
+}
+.p-table td {
+  padding: 2rem 0;
+  background-color: #ffffff;
+}
+.p-table td:nth-of-type(1) {
+  padding: auto 1rem;
+  text-align: center;
+}
+.p-table td:nth-of-type(n+2):nth-child(-n+6) {
+  padding-left: 1rem;
+}
+.p-table td a::before {
+  font-family: "Material Icons";
+  font-size: 1.5rem;
+  content: "\e3c9";
 }
 
 .c-icon--account {

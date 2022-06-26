@@ -3,9 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/foundations.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/object.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>お知らせ 編集 | Salus製薬株式会社_admin</title>
 </head>
 <body>
-    
+    <div class="l-grid">
+        <header class="l-header  p-grid p-grid__header df">
+            <div class="p-nav">
+                <nav class="p-nav__header">
+                    <ul class="df">
+                        <a href="">
+                            <li>
+                                <span class="material-icons">mail_outline</span>
+                            </li>    
+                        </a>
+                        <li class="df">
+                            <span class="material-icons c-icon c-icon--account">account_circle</span>
+                            <div>野村裕子</div>
+                        </li>
+                    </ul>
+                </nav>    
+            </div>
+        </header>
+
+        <nav class="p-menu p-grid p-grid__menu">
+            <div class="p-menu__logo">
+                <a href="">
+                    <h1>
+                        <img src="./img/salus-logo-admin.svg" alt="Salus製薬株式会社">
+                    </h1>    
+                </a>
+            </div>
+            <ul class="p-menu__list">
+                <li>
+                    <a href="">
+                        <div class="c-icon c-icon--mypage">マイページ</div>
+                    </a>
+                </li>
+                <li>
+                    <div class="c-icon c-icon--edit p-menu__accordion">編集</div>
+                    <ul class="p-menu-sub">
+                        <li><a href="">お知らせ</a></li>
+                        <li><a href="">トピックス</a></li>
+                        <li><a href="">会社概要</a></li>
+                        <li><a href="">事業</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="c-icon c-icon--add p-menu__accordion">新規作成</div>
+                    <ul class="p-menu-sub">
+                        <li><a href="">お知らせ</a></li>
+                        <li><a href="">トピックス</a></li>
+                        <li><a href="">会社概要</a></li>
+                        <li><a href="">事業</a></li>
+                    </ul>
+                </li>
+             </ul>
+        </nav>
+
+        <main class="p-grid p-grid__edit">
+            <section>
+                <div class="p-edit l-wrapper">
+                    <div class="c-heading">
+                        <h2>お知らせ 編集</h2>
+                    </div>
+                        <div class="p-edit df">
+                            <div class="df">
+                                <div class="p-edit__pull-down-list">
+                                    <select name="" id="">
+                                        <option value="">担当者</option>
+                                        <option value="">野村裕子</option>
+                                    </select>
+                                </div>
+                                <div class="p-edit__pull-down-list">
+                                    <select name="" id="">
+                                        <option value="">公開状態</option>
+                                        <option value="">公開</option>
+                                        <option value="">非公開</option>
+                                    </select>
+                                </div>
+                                <div class="p-edit__search">
+                                    <input type="search" placeholder="検索">
+                                </div>    
+                            </div>
+                            <div class="p-edit__delet df">
+                                <a href="" class="df"><input type="button" value="削除"></a>
+                            </div>
+                        </div>
+                        <div class="p-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th><input type="checkbox"></th>
+                                        <th>タイトル</th>
+                                        <th>更新日時</th>
+                                        <th>担当者</th>
+                                        <th>公開状態</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><input type="checkbox"></td>
+                                        <td>食品添加物から「保存料フレー」をプレスリリースいたしました。</td>
+                                        <td>2022/07/01</td>
+                                        <td>野村裕子</td>
+                                        <td>公開</td>
+                                        <td>
+                                            <a href=""><input type="button">編集</a>
+                                            <div class="p-table__arrow"></div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="p-grid p-grid__footer l-footer df">
+            <small>&copy; 2022 Iwase Shiho</small>
+        </footer>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/accordion.js" type="text/javascript"></script>
+
 </body>
 </html>
