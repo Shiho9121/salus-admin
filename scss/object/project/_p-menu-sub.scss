@@ -1,11 +1,31 @@
 .p-menu-sub {
     display: none;
+    font-size: 1rem;
     background-color: #44546C;
+    margin-bottom: 2.5rem;
+    margin-top: 1rem;
     li {
+        position: relative;
+        transition: .3s;
+        &:hover {
+            color: #8CDBFF;
+            border-left: 8px solid #8CDBFF;
+            transition: .3s;
+        }
         a {
             padding: 1rem 0;
             margin: 0;
             padding-left: 3.5rem;
+            &:hover {
+                &::after {
+                    font-family: 'Material Icons';
+                    font-size: 1.5rem;
+                    content: '\e5cc';
+                    position: absolute;
+                    top: 24%;
+                    right: 16px;
+                }
+            }
         }
     }
 }

@@ -28,15 +28,22 @@
   width: 100%;
   font-size: 1.3rem;
 }
+.p-menu__list > li:first-of-type {
+  margin-bottom: 2.5rem;
+}
+.p-menu__list > li:last-of-type {
+  margin-top: 2.5rem;
+}
+.p-menu__list li {
+  position: relative;
+}
 .p-menu__list li a {
   display: inline-block;
   width: 100%;
-  margin-bottom: 2.5rem;
   padding-left: 1rem;
   padding-right: 0.5rem;
 }
 .p-menu__accordion {
-  margin-bottom: 2.5rem;
   padding-left: 1rem;
   padding-right: 0.5rem;
   cursor: pointer;
@@ -44,12 +51,32 @@
 
 .p-menu-sub {
   display: none;
+  font-size: 1rem;
   background-color: #44546C;
+  margin-bottom: 2.5rem;
+  margin-top: 1rem;
+}
+.p-menu-sub li {
+  position: relative;
+  transition: 0.3s;
+}
+.p-menu-sub li:hover {
+  color: #8CDBFF;
+  border-left: 8px solid #8CDBFF;
+  transition: 0.3s;
 }
 .p-menu-sub li a {
   padding: 1rem 0;
   margin: 0;
   padding-left: 3.5rem;
+}
+.p-menu-sub li a:hover::after {
+  font-family: "Material Icons";
+  font-size: 1.5rem;
+  content: "\e5cc";
+  position: absolute;
+  top: 24%;
+  right: 16px;
 }
 
 .p-grid__menu {
