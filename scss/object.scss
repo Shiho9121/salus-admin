@@ -7,8 +7,12 @@
 @use "./object/project/p-menu" as *;
 @use "./object/project/p-menu-sub" as *;
 @use "./object/project/p-grid" as *;
+//mypage
+@use "./object/project/p-mypage" as *;
+@use "./object/project/p-notification" as *;
 //loading
 
 //component
 @use "./object/component/c-icon" as *;
 @use "./object/component/c-menu-active" as *;
+@use "./object/component/c-heading" as *;

@@ -1,0 +1,24 @@
+.p-notification {
+    margin-top: 5rem;
+    h3 {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    ul {
+        margin-top: 2rem;
+        li {
+            align-items: center;
+            padding: 2rem 0;
+            border-top: 1px solid #D6D6D6;
+            border-bottom: 1px solid #D6D6D6;
+            &:not(:first-of-type) {
+                border-top: none;
+            }
+            div {
+                &:first-child {
+                    margin-right: 2rem;
+                }    
+            }
+        }
+    }
+}

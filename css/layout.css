@@ -6,7 +6,19 @@
 
 .l-header {
   background-color: #ffffff;
-  padding: 0 5%;
+  padding: 0 2%;
   justify-content: end;
   align-items: center;
+}
+
+.l-wrapper {
+  margin: 2%;
+}
+
+.l-footer {
+  padding: 1% 2%;
+  background-color: #3E4D62;
+  color: #ffffff;
+  align-items: center;
+  justify-content: end;
 }

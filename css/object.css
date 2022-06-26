@@ -105,6 +105,29 @@
   grid-column: 1/3;
 }
 
+.p-notification {
+  margin-top: 5rem;
+}
+.p-notification h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.p-notification ul {
+  margin-top: 2rem;
+}
+.p-notification ul li {
+  align-items: center;
+  padding: 2rem 0;
+  border-top: 1px solid #D6D6D6;
+  border-bottom: 1px solid #D6D6D6;
+}
+.p-notification ul li:not(:first-of-type) {
+  border-top: none;
+}
+.p-notification ul li div:first-child {
+  margin-right: 2rem;
+}
+
 .c-icon--account {
   margin-right: 1rem;
 }
@@ -157,4 +180,9 @@
   position: relative;
   top: 4px;
   left: 54px;
+}
+
+.c-heading h2 {
+  font-size: 2rem;
+  font-weight: bold;
 }
