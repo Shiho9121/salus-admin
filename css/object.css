@@ -235,10 +235,33 @@
 .p-table td:nth-of-type(n+2):nth-child(-n+6) {
   padding-left: 1rem;
 }
+.p-table td a {
+  background-color: #D6D6D6;
+  justify-content: center;
+  align-items: center;
+  width: 6.5rem;
+  height: 3rem;
+  border-radius: 4px;
+  margin-right: 0.5rem;
+}
 .p-table td a::before {
   font-family: "Material Icons";
   font-size: 1.5rem;
   content: "\e3c9";
+  margin-right: 0.5rem;
+}
+.p-table__arrow {
+  background-color: #D6D6D6;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+}
+.p-table__arrow::before {
+  font-family: "Material Icons";
+  font-size: 1.5rem;
+  content: "\e5cf";
 }
 
 .c-icon--account {
