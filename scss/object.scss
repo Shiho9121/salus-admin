@@ -12,10 +12,20 @@
 @use "./object/project/p-notification" as *;
 //edit
 @use "./object/project/p-edit" as *;
+@use "./object/project/p-sort-menu" as *;
 @use "./object/project/p-table" as *;
+//add
+@use "./object/project/p-add" as *;
+@use "./object/project/p-text-editor" as *;
+@use "./object/project/p-file-button" as *;
+@use "./object/project/p-date-time" as *;
+@use "./object/project/p-public-status" as *;
+@use "./object/project/p-add-button" as *;
 //loading
 
 //component
 @use "./object/component/c-icon" as *;
 @use "./object/component/c-menu-active" as *;
 @use "./object/component/c-heading" as *;
+@use "./object/component/c-title" as *;
+@use "./object/component/c-editor" as *;

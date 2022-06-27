@@ -11,6 +11,10 @@
   align-items: center;
 }
 
+main {
+  min-height: calc(100vh - 117px);
+}
+
 .l-wrapper {
   margin: 2%;
 }

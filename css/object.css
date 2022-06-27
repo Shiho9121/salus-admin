@@ -13,7 +13,7 @@
 }
 
 .p-menu {
-  height: 100vh;
+  height: 100%;
 }
 .p-menu__logo {
   text-align: center;
@@ -128,11 +128,11 @@
   margin-right: 2rem;
 }
 
-.p-edit {
+.p-sort-menu {
   margin-top: 2rem;
   align-items: end;
 }
-.p-edit__pull-down-list {
+.p-sort-menu__pull-down-list {
   border: 1px solid #C4C2C2;
   background-color: #ffffff;
   border-radius: 2px;
@@ -140,7 +140,7 @@
   height: 2rem;
   margin-right: 1.5rem;
 }
-.p-edit__pull-down-list select {
+.p-sort-menu__pull-down-list select {
   background-image: url(../img/arrow-select.svg);
   background-position: right 0px center;
   background-repeat: no-repeat;
@@ -149,10 +149,10 @@
   padding: 0 0.5rem;
   cursor: pointer;
 }
-.p-edit__search {
+.p-sort-menu__search {
   width: 15rem;
 }
-.p-edit__search input {
+.p-sort-menu__search input {
   border: 1px solid #C4C2C2;
   background-color: #ffffff;
   border-radius: 16px;
@@ -160,10 +160,10 @@
   height: 2rem;
   padding: 0 0.5rem;
 }
-.p-edit__delet {
+.p-sort-menu__delet {
   margin-left: auto;
 }
-.p-edit__delet a {
+.p-sort-menu__delet a {
   background-color: #EA6969;
   color: #ffffff;
   font-weight: bold;
@@ -174,7 +174,7 @@
   border-radius: 4px;
   box-shadow: 0px 3px 8px -4px rgba(0, 0, 0, 0.6);
 }
-.p-edit__delet a::before {
+.p-sort-menu__delet a::before {
   font-family: "Material Icons";
   font-size: 1.5rem;
   content: "\e92e";
@@ -278,6 +278,142 @@
   border-bottom: 1px solid #C7CDD5;
 }
 
+.p-text-editor {
+  margin-top: 2.5rem;
+  background-color: #ffffff;
+}
+
+.p-file-button {
+  margin-top: 2.5rem;
+}
+.p-file-button h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.p-file-button__selection {
+  margin-top: 1rem;
+}
+.p-file-button__selection label {
+  padding: 1rem;
+  color: #2E3A4A;
+  background-color: #B5D5F5;
+  box-shadow: 0px 3px 8px -4px rgba(0, 0, 0, 0.6);
+  border-radius: 4px;
+  font-weight: bold;
+  display: inline-block;
+  position: relative;
+}
+.p-file-button__selection input {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.p-file-button__selection p {
+  margin-top: 1rem;
+}
+
+.p-date-time {
+  margin-top: 2.5rem;
+}
+.p-date-time h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.p-date-time select {
+  border: 1px solid #C4C2C2;
+  background-color: #ffffff;
+  background-image: url(../img/arrow-select.svg);
+  background-position: right 0px center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 2rem;
+  padding: 0 0.5rem;
+  cursor: pointer;
+}
+.p-date-time input {
+  border: 1px solid #C4C2C2;
+  background-color: #ffffff;
+  width: 100%;
+  height: 2rem;
+  padding: 0 0.5rem;
+}
+.p-date-time__form {
+  margin-top: 1rem;
+}
+.p-date-time__year {
+  width: 6.5rem;
+  align-items: center;
+}
+.p-date-time__year span {
+  margin-left: 0.5rem;
+}
+.p-date-time__month, .p-date-time__day {
+  width: 6.5rem;
+  align-items: center;
+  margin-left: 1.5rem;
+}
+.p-date-time__month span, .p-date-time__day span {
+  margin-left: 0.5rem;
+}
+.p-date-time__hour {
+  width: 3rem;
+  margin-left: 1.5rem;
+  margin-right: 0.5rem;
+}
+.p-date-time__colon {
+  align-items: center;
+}
+.p-date-time__minutes {
+  width: 3rem;
+  margin-left: 0.5rem;
+}
+
+.p-public-status {
+  margin-top: 2.5rem;
+}
+.p-public-status h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.p-public-status select {
+  border: 1px solid #C4C2C2;
+  background-color: #ffffff;
+  background-image: url(../img/arrow-select.svg);
+  background-position: right 0px center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 2rem;
+  padding: 0 0.5rem;
+  cursor: pointer;
+}
+.p-public-status__selection {
+  width: 6.5rem;
+  margin-top: 1rem;
+}
+
+.p-add-button {
+  margin: 3.5rem 0;
+}
+.p-add-button a {
+  color: #2E3A4A;
+  font-weight: bold;
+  box-shadow: 0px 3px 8px -4px rgba(0, 0, 0, 0.6);
+  border-radius: 4px;
+}
+.p-add-button a:first-of-type {
+  background-color: #9DD2A9;
+  padding: 1rem 2.5rem;
+  margin-right: 1.5rem;
+}
+.p-add-button a:last-of-type {
+  background-color: #FF8F67;
+  padding: 1rem 4rem;
+}
+
 .c-icon--account {
   margin-right: 1rem;
 }
@@ -335,4 +471,20 @@
 .c-heading h2 {
   font-size: 2rem;
   font-weight: bold;
+}
+
+.c-title {
+  margin-top: 2.5rem;
+  font-size: 1.5rem;
+  background-color: #ffffff;
+  border: 1px solid #C4C2C2;
+}
+.c-title input {
+  width: 100%;
+  height: 3.5rem;
+  padding: 0 0.5rem;
+}
+
+#c-editor {
+  height: 25rem;
 }
