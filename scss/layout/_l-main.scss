@@ -1,3 +1,8 @@
+@use "../foundations/responsive" as *;
+
 main {
     min-height: calc(100vh - calc(96px + 21px));
+    @include mq(sm) {
+        min-height: calc(100vh - calc(64px + 16px));
+    }
 }

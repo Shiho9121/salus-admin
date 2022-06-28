@@ -1,5 +1,10 @@
+@use "../../foundations/responsive" as *;
+
 .p-notification {
     margin-top: 5rem;
+    @include mq(sm) {
+        margin: 2.5rem 0;
+    }
     h3 {
         font-size: 1.5rem;
         font-weight: 500;
@@ -11,12 +16,20 @@
             padding: 2rem 0;
             border-top: 1px solid #D6D6D6;
             border-bottom: 1px solid #D6D6D6;
+            @include mq(sm) {
+                display: block;
+                padding: 1.5rem 0;
+            }
             &:not(:first-of-type) {
                 border-top: none;
             }
             div {
                 &:first-child {
                     margin-right: 2rem;
+                    @include mq(sm) {
+                        margin-right: 0;
+                        margin-bottom: 1rem;
+                    }
                 }    
             }
         }

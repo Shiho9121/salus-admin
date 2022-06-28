@@ -3,6 +3,11 @@
 .l-header {
     background-color: #ffffff;
     padding: 0 2%;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
+    @include mq(sm) {
+        position: fixed;
+        width: 100%;
+        height: 4rem;
+    }
 }

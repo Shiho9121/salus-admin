@@ -4,6 +4,9 @@
     display: grid;
     grid-template-rows: 6rem 1fr 1rem;
     grid-template-columns: 14.5rem 1fr;
+    @include mq() {
+        grid-template-columns: 24% 1fr;
+    }
     @include mq(sm) {
         grid-template-rows: 4rem 1fr 1rem;
         grid-template-columns: 1fr;
