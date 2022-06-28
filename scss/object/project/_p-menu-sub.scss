@@ -1,3 +1,5 @@
+@use "../../foundations/responsive" as *;
+
 .p-menu-sub {
     display: none;
     font-size: 1rem;
@@ -7,6 +9,9 @@
     li {
         position: relative;
         transition: .3s;
+        @include mq(sm) {
+            width: 100%;
+        }
         &:hover {
             font-weight: bold;
             color: #8CDBFF;
@@ -17,6 +22,10 @@
             padding: 1rem 0;
             margin: 0;
             padding-left: 3.5rem;
+            @include mq(sm) {
+                display: inline-block;
+                width: 100%;
+            }
             &:hover {
                 &::after {
                     font-family: 'Material Icons';

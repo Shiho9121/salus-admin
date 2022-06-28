@@ -5,6 +5,7 @@
 //menu
 @use "./object/project/p-nav" as *;
 @use "./object/project/p-menu" as *;
+@use "./object/project/p-menu-sp" as *;
 @use "./object/project/p-menu-sub" as *;
 @use "./object/project/p-grid" as *;
 //mypage
@@ -29,3 +30,6 @@
 @use "./object/component/c-heading" as *;
 @use "./object/component/c-title" as *;
 @use "./object/component/c-editor" as *;
+@use "./object/component/c-hamburger" as *;
+@use "./object/component/c-active" as *;
+@use "./object/component/c-back-dark" as *;

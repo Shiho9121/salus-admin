@@ -1,4 +1,9 @@
+@use "../../foundations/responsive" as *;
+
 .p-menu {
+    @include mq(sm) {
+        display: none;
+    }
     height: 100%;
     &__logo {
         text-align: center;
@@ -42,6 +47,9 @@
         padding-right: .5rem;
         cursor: pointer;
         transition: .3s;
+        @include mq(sm) {
+            padding-right: 1rem;
+        }
         &:hover {
             color: #8CDBFF;
             transition: .3s;

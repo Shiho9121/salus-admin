@@ -1,3 +1,5 @@
+@use "../../foundations/responsive" as *;
+
 .c-icon {
     &--account {
         margin-right: 1rem;
@@ -36,6 +38,11 @@
             position: relative;
             top: 4px;
             left: 96px;
+            @include mq(sm) {
+                left: 0;
+                right: .5rem;
+                margin-left: auto;
+            }
         }
     }
     &--add {
@@ -54,6 +61,11 @@
             position: relative;
             top: 4px;
             left: 54px;
+            @include mq(sm) {
+                left: 0;
+                right: .5rem;
+                margin-left: auto;
+            }
         }
     }
 }

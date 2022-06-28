@@ -3,6 +3,12 @@
   grid-template-rows: 6rem 1fr 1rem;
   grid-template-columns: 14.5rem 1fr;
 }
+@media screen and (max-width: 599px) {
+  .l-grid {
+    grid-template-rows: 4rem 1fr 1rem;
+    grid-template-columns: 1fr;
+  }
+}
 
 .l-header {
   background-color: #ffffff;

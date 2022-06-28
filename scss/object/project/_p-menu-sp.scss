@@ -1,0 +1,48 @@
+.p-menu-sp {
+    &__list {
+        position: fixed;
+        z-index : 2;
+        top  : 0;
+        left : 0;
+        color: #ffffff;
+        background: #3E4D62;
+        text-align: center;
+        transform: translateX(-100%);
+        transition: all 0.6s;
+        width: 90%;
+        height: 100%;
+        font-weight: 500;
+        overflow: auto;
+        &.c-active {
+            transform: translateX(0%);
+            visibility: visible;
+        }
+        & > {
+            ul {
+                margin-top: 4.5rem;
+                text-align: left;
+                & > {
+                    li {
+                        margin-bottom: 2rem;
+                    }
+                }
+            }
+        }
+    }
+    &__img {
+        width: 7.5rem;
+        padding-top: 1rem;
+        a {
+            img {
+                width: 100%;
+                padding-left: 1rem;
+            }
+        }
+    }
+    &__mypage {
+        padding-left: 1rem;
+    }
+    &__edit, &__add {
+        align-items: flex-end;
+    }
+}

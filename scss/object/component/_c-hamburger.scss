@@ -1,0 +1,29 @@
+.c-hamburger {
+    position: fixed;
+    width: 2.5rem;
+    height: 2.5rem;
+    top: .7rem;
+    left: .5rem;
+    z-index: 3;
+    cursor: pointer;
+    span {
+        display : block;
+        position: absolute;
+        width   : 30px;
+        height  : 2px ;
+        left    : 6px;
+        background : #3E4D62;
+        -webkit-transition: 0.3s ease-in-out;
+        -moz-transition   : 0.3s ease-in-out;
+        transition        : 0.3s ease-in-out;
+        &:nth-child(1) {
+            top: 10px;
+        }
+        &:nth-child(2) {
+            top: 20px;
+        }
+        &:nth-child(3) {
+            top: 30px;
+        }
+    }
+}
