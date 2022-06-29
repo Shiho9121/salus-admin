@@ -15,6 +15,7 @@
 @use "./object/project/p-edit" as *;
 @use "./object/project/p-sort-menu" as *;
 @use "./object/project/p-table" as *;
+@use "./object/project/p-table-sp" as *;
 //add
 @use "./object/project/p-add" as *;
 @use "./object/project/p-text-editor" as *;
@@ -33,3 +34,4 @@
 @use "./object/component/c-hamburger" as *;
 @use "./object/component/c-active" as *;
 @use "./object/component/c-back-dark" as *;
+@use "./object/component/c-button" as *;

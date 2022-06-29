@@ -235,9 +235,23 @@
   }
 }
 
+@media screen and (max-width: 599px) {
+  .p-edit {
+    margin-bottom: 2.5rem;
+  }
+}
+
 .p-sort-menu {
   margin-top: 2rem;
   align-items: end;
+}
+@media screen and (max-width: 599px) {
+  .p-sort-menu {
+    display: block;
+  }
+  .p-sort-menu > div {
+    display: block;
+  }
 }
 .p-sort-menu__pull-down-list {
   border: 1px solid #C4C2C2;
@@ -246,6 +260,15 @@
   width: 6.5rem;
   height: 2rem;
   margin-right: 1.5rem;
+}
+@media screen and (max-width: 599px) {
+  .p-sort-menu__pull-down-list {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 1.5rem;
+  }
 }
 .p-sort-menu__pull-down-list select {
   background-image: url(../img/arrow-select.svg);
@@ -259,6 +282,13 @@
 .p-sort-menu__search {
   width: 15rem;
 }
+@media screen and (max-width: 599px) {
+  .p-sort-menu__search {
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 1.5rem;
+  }
+}
 .p-sort-menu__search input {
   border: 1px solid #C4C2C2;
   background-color: #ffffff;
@@ -267,29 +297,19 @@
   height: 2rem;
   padding: 0 0.5rem;
 }
-.p-sort-menu__delet {
-  margin-left: auto;
-}
-.p-sort-menu__delet a {
-  background-color: #EA6969;
-  color: #ffffff;
-  font-weight: bold;
-  width: 6.5rem;
-  height: 3rem;
-  justify-content: center;
-  align-items: center;
-  border-radius: 4px;
-  box-shadow: 0px 3px 8px -4px rgba(0, 0, 0, 0.6);
-}
-.p-sort-menu__delet a::before {
-  font-family: "Material Icons";
-  font-size: 1.5rem;
-  content: "\e92e";
-  margin-right: 0.5rem;
+@media screen and (max-width: 599px) {
+  .p-sort-menu__search input {
+    height: 100%;
+  }
 }
 
 .p-table {
   margin-top: 2rem;
+}
+@media screen and (max-width: 599px) {
+  .p-table {
+    display: none;
+  }
 }
 .p-table table {
   width: 100%;
@@ -317,7 +337,7 @@
   position: absolute;
   top: 8px;
   right: 0;
-  z-index: 1;
+  z-index: 0;
 }
 .p-table th:nth-of-type(n+2):nth-child(-n+5) {
   padding-left: 1rem;
@@ -331,7 +351,7 @@
   position: absolute;
   top: 8px;
   right: 0;
-  z-index: 1;
+  z-index: 0;
 }
 .p-table td {
   padding: 1.5rem 0;
@@ -342,34 +362,6 @@
 }
 .p-table td:nth-of-type(n+2):nth-child(-n+6) {
   padding-left: 1rem;
-}
-.p-table__edit {
-  background-color: #D6D6D6;
-  justify-content: center;
-  align-items: center;
-  height: 3rem;
-  border-radius: 4px;
-  margin-right: 1rem;
-}
-.p-table__edit::before {
-  font-family: "Material Icons";
-  font-size: 1.5rem;
-  content: "\e3c9";
-  margin-right: 0.5rem;
-}
-.p-table__arrow {
-  background-color: #D6D6D6;
-  width: 3rem;
-  height: 3rem;
-  border-radius: 4px;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-.p-table__arrow::before {
-  font-family: "Material Icons";
-  font-size: 1.5rem;
-  content: "\e5cf";
 }
 .p-table tr {
   border-left: 1px solid #C7CDD5;
@@ -382,6 +374,107 @@
   background-color: #F0F0F0;
 }
 .p-table tr:last-of-type {
+  border-bottom: 1px solid #C7CDD5;
+}
+
+.p-table-sp {
+  display: none;
+}
+@media screen and (max-width: 599px) {
+  .p-table-sp {
+    display: block;
+  }
+}
+.p-table-sp table {
+  table-layout: fixed;
+  width: 100%;
+}
+.p-table-sp input[type=checkbox] {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.p-table-sp tr {
+  border-left: 1px solid #C7CDD5;
+  border-right: 1px solid #C7CDD5;
+}
+.p-table-sp th {
+  background-color: #C9CDD0;
+  font-weight: 500;
+  vertical-align: middle;
+  padding: 1rem 0;
+  position: relative;
+}
+.p-table-sp th:nth-of-type(1) {
+  padding: 1rem;
+  text-align: center;
+  width: 16%;
+}
+.p-table-sp th:nth-of-type(1)::after {
+  content: "";
+  display: inline-block;
+  width: 1.5px;
+  height: 36px;
+  background-color: #BDBEBF;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  z-index: 0;
+}
+.p-table-sp th:nth-of-type(2) {
+  padding-left: 1rem;
+}
+.p-table-sp__title td:first-of-type {
+  padding: 1.5rem 1rem;
+  width: 16%;
+}
+.p-table-sp__title td:last-of-type {
+  padding: 1.5rem 0;
+  padding-left: 1rem;
+  line-height: 1.5;
+}
+.p-table-sp__setting--border-left {
+  position: relative;
+}
+.p-table-sp__setting--border-left::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  background-color: #BDBEBF;
+  position: absolute;
+  top: 34px;
+  left: 1rem;
+  z-index: 0;
+}
+.p-table-sp__setting--border-right {
+  position: relative;
+}
+.p-table-sp__setting--border-right::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  background-color: #BDBEBF;
+  position: absolute;
+  top: 34px;
+  right: 1rem;
+  z-index: 0;
+}
+.p-table-sp__setting td:nth-last-of-type(2) {
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+}
+.p-table-sp__edit-button {
+  width: 100%;
+  padding: 1rem 1rem 1.5rem;
+}
+.p-table-sp--odd {
+  background-color: #ffffff;
+}
+.p-table-sp--even {
+  background-color: #F0F0F0;
+}
+.p-table-sp--even:last-of-type {
   border-bottom: 1px solid #C7CDD5;
 }
 
@@ -712,8 +805,79 @@
   height: 100%;
   top: 0;
   left: 0;
-  z-index: 0;
+  z-index: 1;
   background: rgba(3, 3, 3, 0.5);
   transition: all 0.5s 0s ease;
   display: none;
+}
+
+.c-button__edit {
+  background-color: #D6D6D6;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  border-radius: 4px;
+  margin-right: 1rem;
+}
+@media screen and (max-width: 599px) {
+  .c-button__edit {
+    width: 100%;
+  }
+}
+.c-button__edit::before {
+  font-family: "Material Icons";
+  font-size: 1.5rem;
+  content: "\e3c9";
+  margin-right: 0.5rem;
+}
+.c-button__delet {
+  margin-left: auto;
+}
+@media screen and (max-width: 599px) {
+  .c-button__delet {
+    display: none !important;
+  }
+}
+.c-button__delet a {
+  background-color: #EA6969;
+  color: #ffffff;
+  font-weight: bold;
+  width: 6.5rem;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  box-shadow: 0px 3px 8px -4px rgba(0, 0, 0, 0.6);
+}
+.c-button__delet a::before {
+  font-family: "Material Icons";
+  font-size: 1.5rem;
+  content: "\e92e";
+  margin-right: 0.5rem;
+}
+.c-button__delet--sp {
+  display: none;
+}
+@media screen and (max-width: 599px) {
+  .c-button__delet--sp {
+    display: block;
+    margin-top: 1.5rem;
+  }
+}
+.c-button__delet--sp a {
+  background-color: #EA6969;
+  color: #ffffff;
+  font-weight: bold;
+  width: 6.5rem;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  box-shadow: 0px 3px 8px -4px rgba(0, 0, 0, 0.6);
+}
+.c-button__delet--sp a::before {
+  font-family: "Material Icons";
+  font-size: 1.5rem;
+  content: "\e92e";
+  margin-right: 0.5rem;
 }

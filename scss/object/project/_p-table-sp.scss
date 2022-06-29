@@ -1,0 +1,108 @@
+@use "../../foundations/responsive" as *;
+
+.p-table-sp {
+    display: none;
+    @include mq(sm) {
+        display: block;
+    }
+    table {
+        table-layout: fixed;
+        width: 100%;
+    }
+    input[type=checkbox] {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    tr {
+        border-left: 1px solid #C7CDD5;
+        border-right: 1px solid #C7CDD5;
+    }
+    th {
+        background-color: #C9CDD0;
+        font-weight: 500;
+        vertical-align: middle;
+        padding: 1rem 0;
+        position: relative;
+        &:nth-of-type(1) {
+            padding: 1rem;
+            text-align: center;
+            width: 16%;
+            &::after {
+                content:"";
+                display: inline-block;
+                width: 1.5px;
+                height: 36px;
+                background-color: #BDBEBF;
+                position: absolute;
+                top: 10px;
+                right: 0;
+                z-index: 0;
+            }
+        }
+        &:nth-of-type(2) {
+            padding-left: 1rem;
+        }
+    }
+    &__title {
+        td {
+            &:first-of-type {
+                padding: 1.5rem 1rem;
+                width: 16%;
+            }
+            &:last-of-type {
+                padding: 1.5rem 0;
+                padding-left: 1rem;
+                line-height: 1.5;
+            }    
+        }
+    }
+    &__setting {
+        &--border-left {
+            position: relative;
+            &::after {
+                content: "";
+                display: inline-block;
+                width: 100%;
+                height: 1px;
+                background-color: #BDBEBF;
+                position: absolute;
+                top: 34px;
+                left: 1rem;
+                z-index: 0;
+            }
+        }
+        &--border-right {
+            position: relative;
+            &::after {
+                content: "";
+                display: inline-block;
+                width: 100%;
+                height: 1px;
+                background-color: #BDBEBF;
+                position: absolute;
+                top: 34px;
+                right: 1rem;
+                z-index: 0;
+            }
+        }
+        td {
+            &:nth-last-of-type(2) {
+                padding-left: 1rem;
+                padding-bottom: 1rem;
+            }
+        }
+    }
+    &__edit-button {
+        width: 100%;
+        padding: 1rem 1rem 1.5rem;
+    }
+    &--odd {
+        background-color: #ffffff;
+    }
+    &--even {
+        background-color: #F0F0F0;
+        &:last-of-type {
+            border-bottom: 1px solid #C7CDD5;
+        }
+    }
+}

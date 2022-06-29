@@ -1,2 +1,7 @@
+@use "../../foundations/responsive" as *;
+
 .p-edit { 
+    @include mq(sm) {
+        margin-bottom: 2.5rem;
+    }
 }
