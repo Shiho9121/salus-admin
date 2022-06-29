@@ -2,7 +2,7 @@
 
 .p-table {
     margin-top: 2rem;
-    @include mq(sm) {
+    @include mq() {
         display: none;
     }
     table {

@@ -1,7 +1,7 @@
 @use "../../foundations/responsive" as *;
 
 .c-heading {
-    @include mq(sm) {
+    @include mq() {
         margin-top: 1.5rem;
     }
     h2 {

@@ -2,16 +2,16 @@
 
 .p-table-sp {
     display: none;
-    @include mq(sm) {
+    @include mq() {
         display: block;
+        margin-top: 1.5rem;
     }
     table {
         table-layout: fixed;
         width: 100%;
     }
     input[type=checkbox] {
-        width: 1.5rem;
-        height: 1.5rem;
+        transform: scale(1.5);
     }
     tr {
         border-left: 1px solid #C7CDD5;
@@ -25,7 +25,6 @@
         position: relative;
         &:nth-of-type(1) {
             padding: 1rem;
-            text-align: center;
             width: 16%;
             &::after {
                 content:"";
@@ -50,8 +49,7 @@
                 width: 16%;
             }
             &:last-of-type {
-                padding: 1.5rem 0;
-                padding-left: 1rem;
+                padding: 1.5rem 1rem;
                 line-height: 1.5;
             }    
         }

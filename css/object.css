@@ -235,7 +235,7 @@
   }
 }
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 1024px) {
   .p-edit {
     margin-bottom: 2.5rem;
   }
@@ -306,7 +306,7 @@
 .p-table {
   margin-top: 2rem;
 }
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 1024px) {
   .p-table {
     display: none;
   }
@@ -380,9 +380,10 @@
 .p-table-sp {
   display: none;
 }
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 1024px) {
   .p-table-sp {
     display: block;
+    margin-top: 1.5rem;
   }
 }
 .p-table-sp table {
@@ -390,8 +391,7 @@
   width: 100%;
 }
 .p-table-sp input[type=checkbox] {
-  width: 1.5rem;
-  height: 1.5rem;
+  transform: scale(1.5);
 }
 .p-table-sp tr {
   border-left: 1px solid #C7CDD5;
@@ -406,7 +406,6 @@
 }
 .p-table-sp th:nth-of-type(1) {
   padding: 1rem;
-  text-align: center;
   width: 16%;
 }
 .p-table-sp th:nth-of-type(1)::after {
@@ -428,8 +427,7 @@
   width: 16%;
 }
 .p-table-sp__title td:last-of-type {
-  padding: 1.5rem 0;
-  padding-left: 1rem;
+  padding: 1.5rem 1rem;
   line-height: 1.5;
 }
 .p-table-sp__setting--border-left {
@@ -724,7 +722,7 @@
   }
 }
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 1024px) {
   .c-heading {
     margin-top: 1.5rem;
   }
@@ -819,7 +817,7 @@
   border-radius: 4px;
   margin-right: 1rem;
 }
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 1024px) {
   .c-button__edit {
     width: 100%;
   }
@@ -833,7 +831,7 @@
 .c-button__delet {
   margin-left: auto;
 }
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 1024px) {
   .c-button__delet {
     display: none !important;
   }
@@ -858,7 +856,7 @@
 .c-button__delet--sp {
   display: none;
 }
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 1024px) {
   .c-button__delet--sp {
     display: block;
     margin-top: 1.5rem;
