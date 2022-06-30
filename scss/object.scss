@@ -23,6 +23,7 @@
 @use "./object/project/p-date-time" as *;
 @use "./object/project/p-public-status" as *;
 //loading
+@use "./object/project/p-loading" as *;
 
 //component
 @use "./object/component/c-icon" as *;
@@ -34,3 +35,4 @@
 @use "./object/component/c-active" as *;
 @use "./object/component/c-back-dark" as *;
 @use "./object/component/c-button" as *;
+@use "./object/component/c-loading" as *;
