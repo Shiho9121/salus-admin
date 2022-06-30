@@ -1,3 +1,5 @@
+@use "../../foundations/responsive" as *;
+
 .p-public-status {
     margin-top: 2.5rem;
     h3 {
@@ -14,9 +16,15 @@
         height: 2rem;
         padding: 0 0.5rem;
         cursor: pointer;
+        @include mq(sm) {
+            height: 3rem;
+        }
     }
     &__selection {
         width: 6.5rem;
         margin-top: 1rem;
+        @include mq(sm) {
+            width: 100%;
+        }
     }
 }

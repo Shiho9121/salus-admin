@@ -1,3 +1,5 @@
+@use "../../foundations/responsive" as *;
+
 .p-date-time {
     margin-top: 2.5rem;
     h3 {
@@ -14,6 +16,9 @@
         height: 2rem;
         padding: 0 0.5rem;
         cursor: pointer;
+        @include mq(sm) {
+            height: 3rem;
+        }
     }
     input {
         border: 1px solid #C4C2C2;
@@ -21,13 +26,22 @@
         width: 100%;
         height: 2rem;
         padding: 0 0.5rem;
+        @include mq(sm) {
+            height: 3rem;
+        }
     }
     &__form {
         margin-top: 1rem;
+        @include mq(sm) {
+            flex-wrap: wrap;
+        }
     }
     &__year {
         width: 6.5rem;
         align-items: center;
+        @include mq(sm) {
+            margin-bottom: 1rem;
+        }
         span {
             margin-left: .5rem;
         }
@@ -36,6 +50,11 @@
         width: 6.5rem;
         align-items: center;
         margin-left: 1.5rem;
+        @include mq(sm) {
+            width: calc(35% - 24px);
+            margin-left: 1rem;
+            margin-bottom: 1rem;
+        }
         span {
             margin-left: .5rem;
         }
@@ -44,6 +63,10 @@
         width: 3rem;
         margin-left: 1.5rem;
         margin-right: .5rem;
+        @include mq(sm) {
+            width: 5rem;
+            margin-left: 0;
+        }
     }
     &__colon {
         align-items: center;
@@ -51,5 +74,8 @@
     &__minutes {
         width: 3rem;
         margin-left: .5rem;
+        @include mq(sm) {
+            width: 5rem;
+        }
     }
 }
