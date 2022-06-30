@@ -597,6 +597,7 @@
   width: 3rem;
   margin-left: 1.5rem;
   margin-right: 0.5rem;
+  text-align: center;
 }
 @media screen and (max-width: 599px) {
   .p-date-time__hour {
@@ -604,17 +605,36 @@
     margin-left: 0;
   }
 }
+.p-date-time__hour input::-moz-placeholder {
+  text-align: center;
+}
+.p-date-time__hour input:-ms-input-placeholder {
+  text-align: center;
+}
+.p-date-time__hour input::placeholder {
+  text-align: center;
+}
 .p-date-time__colon {
   align-items: center;
 }
 .p-date-time__minutes {
   width: 3rem;
   margin-left: 0.5rem;
+  text-align: center;
 }
 @media screen and (max-width: 599px) {
   .p-date-time__minutes {
     width: 5rem;
   }
+}
+.p-date-time__minutes input::-moz-placeholder {
+  text-align: center;
+}
+.p-date-time__minutes input:-ms-input-placeholder {
+  text-align: center;
+}
+.p-date-time__minutes input::placeholder {
+  text-align: center;
 }
 
 .p-public-status {
@@ -790,6 +810,15 @@
   width: 100%;
   height: 3.5rem;
   padding: 0 0.5rem;
+}
+.c-title input::-moz-placeholder {
+  font-size: 1rem;
+}
+.c-title input:-ms-input-placeholder {
+  font-size: 1rem;
+}
+.c-title input::placeholder {
+  font-size: 1rem;
 }
 
 #c-editor {

@@ -63,9 +63,15 @@
         width: 3rem;
         margin-left: 1.5rem;
         margin-right: .5rem;
+        text-align: center;
         @include mq(sm) {
             width: 5rem;
             margin-left: 0;
+        }
+        input {
+            &::placeholder {
+                text-align: center;
+            }    
         }
     }
     &__colon {
@@ -74,8 +80,14 @@
     &__minutes {
         width: 3rem;
         margin-left: .5rem;
+        text-align: center;
         @include mq(sm) {
             width: 5rem;
+        }
+        input {
+            &::placeholder {
+                text-align: center;
+            }    
         }
     }
 }
