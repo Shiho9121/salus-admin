@@ -8,6 +8,7 @@
         height: 3rem;
         border-radius: 4px;
         margin-right: 1rem;
+        transition: all ease-in-out 0.2s;
         @include mq() {
             width: 100%;
         }
@@ -16,6 +17,11 @@
             font-size: 1.5rem;
             content: '\e3c9';
             margin-right: .5rem;
+        }
+        &:hover {
+            background-color: #C4C4C4;
+            font-weight: 500;
+            transition: all ease-in-out 0.2s;
         }
     }
     &__delet {
@@ -33,11 +39,16 @@
             align-items: center;
             border-radius: 4px;
             box-shadow: 0px 3px 8px -4px rgba(0,0,0,0.6);
+            transition: all ease-in-out 0.2s;
             &::before {
                 font-family: 'Material Icons';
                 font-size: 1.5rem;
                 content: '\e92e';
                 margin-right: .5rem;
+            }
+            &:hover {
+                background-color: #EB5252;
+                transition: all ease-in-out 0.2s;
             }
         }
         &--sp {
@@ -56,13 +67,55 @@
                 align-items: center;
                 border-radius: 4px;
                 box-shadow: 0px 3px 8px -4px rgba(0,0,0,0.6);
+                transition: all ease-in-out 0.2s;
                 &::before {
                     font-family: 'Material Icons';
                     font-size: 1.5rem;
                     content: '\e92e';
                     margin-right: .5rem;
                 }
+                &:hover {
+                    background-color: #EB5252;
+                    transition: all ease-in-out 0.2s;
+                }    
             }    
+        }
+    }
+    &__file {
+        margin-top: 2.5rem;
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+        &--selection {
+            margin-top: 1rem;
+            label {
+                padding: 1rem;
+                color: #2E3A4A;
+                background-color: #B5D5F5;
+                box-shadow: 0px 3px 8px -4px rgb(0 0 0 / 60%);
+                border-radius: 4px;
+                font-weight: bold;
+                display: inline-block;
+                position: relative;
+                transition: all ease-in-out 0.2s;
+                &:hover {
+                    background-color: #9DC9F5;
+                    transition: all ease-in-out 0.2s;
+                }
+            }
+            input {
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                cursor: pointer;
+            }
+            p {
+                margin-top: 1rem;
+            }
         }
     }
     &__add {
@@ -82,10 +135,20 @@
                 background-color: #9DD2A9;
                 padding: 1rem 2rem;
                 margin-right: 1.5rem;
+                transition: all ease-in-out 0.2s;
+                &:hover {
+                    background-color: #88D199;
+                    transition: all ease-in-out 0.2s;
+                }
             }
             &:last-of-type {
                 background-color: #FF8F67;
                 padding: 1rem 4rem;
+                transition: all ease-in-out 0.2s;
+                &:hover {
+                    background-color: #FF7B57;
+                    transition: all ease-in-out 0.2s;
+                }
                 @include mq(sm) {
                     padding: 0;
                 }

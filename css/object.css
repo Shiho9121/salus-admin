@@ -504,6 +504,11 @@
   font-weight: bold;
   display: inline-block;
   position: relative;
+  transition: all ease-in-out 0.2s;
+}
+.p-file-button__selection label:hover {
+  background-color: #9DC9F5;
+  transition: all ease-in-out 0.2s;
 }
 .p-file-button__selection input {
   position: absolute;
@@ -849,6 +854,7 @@
   height: 3rem;
   border-radius: 4px;
   margin-right: 1rem;
+  transition: all ease-in-out 0.2s;
 }
 @media screen and (max-width: 1024px) {
   .c-button__edit {
@@ -860,6 +866,11 @@
   font-size: 1.5rem;
   content: "\e3c9";
   margin-right: 0.5rem;
+}
+.c-button__edit:hover {
+  background-color: #C4C4C4;
+  font-weight: 500;
+  transition: all ease-in-out 0.2s;
 }
 .c-button__delet {
   margin-left: auto;
@@ -879,12 +890,17 @@
   align-items: center;
   border-radius: 4px;
   box-shadow: 0px 3px 8px -4px rgba(0, 0, 0, 0.6);
+  transition: all ease-in-out 0.2s;
 }
 .c-button__delet a::before {
   font-family: "Material Icons";
   font-size: 1.5rem;
   content: "\e92e";
   margin-right: 0.5rem;
+}
+.c-button__delet a:hover {
+  background-color: #EB5252;
+  transition: all ease-in-out 0.2s;
 }
 .c-button__delet--sp {
   display: none;
@@ -905,12 +921,54 @@
   align-items: center;
   border-radius: 4px;
   box-shadow: 0px 3px 8px -4px rgba(0, 0, 0, 0.6);
+  transition: all ease-in-out 0.2s;
 }
 .c-button__delet--sp a::before {
   font-family: "Material Icons";
   font-size: 1.5rem;
   content: "\e92e";
   margin-right: 0.5rem;
+}
+.c-button__delet--sp a:hover {
+  background-color: #EB5252;
+  transition: all ease-in-out 0.2s;
+}
+.c-button__file {
+  margin-top: 2.5rem;
+}
+.c-button__file h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.c-button__file--selection {
+  margin-top: 1rem;
+}
+.c-button__file--selection label {
+  padding: 1rem;
+  color: #2E3A4A;
+  background-color: #B5D5F5;
+  box-shadow: 0px 3px 8px -4px rgba(0, 0, 0, 0.6);
+  border-radius: 4px;
+  font-weight: bold;
+  display: inline-block;
+  position: relative;
+  transition: all ease-in-out 0.2s;
+}
+.c-button__file--selection label:hover {
+  background-color: #9DC9F5;
+  transition: all ease-in-out 0.2s;
+}
+.c-button__file--selection input {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.c-button__file--selection p {
+  margin-top: 1rem;
 }
 .c-button__add {
   margin-top: 2.5rem;
@@ -933,10 +991,20 @@
   background-color: #9DD2A9;
   padding: 1rem 2rem;
   margin-right: 1.5rem;
+  transition: all ease-in-out 0.2s;
+}
+.c-button__add a:first-of-type:hover {
+  background-color: #88D199;
+  transition: all ease-in-out 0.2s;
 }
 .c-button__add a:last-of-type {
   background-color: #FF8F67;
   padding: 1rem 4rem;
+  transition: all ease-in-out 0.2s;
+}
+.c-button__add a:last-of-type:hover {
+  background-color: #FF7B57;
+  transition: all ease-in-out 0.2s;
 }
 @media screen and (max-width: 599px) {
   .c-button__add a:last-of-type {
