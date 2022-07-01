@@ -873,6 +873,9 @@
   top: 1.5rem;
   transform: rotate(45deg);
 }
+.c-active--fixed-scroll {
+  overflow: hidden;
+}
 
 .c-back-dark {
   position: fixed;
