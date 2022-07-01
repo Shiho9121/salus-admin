@@ -1,0 +1,20 @@
+{
+    "short_name": "Salus製薬株式会社_admin",
+    "name": "Salus製薬株式会社_admin",
+    "icons": [
+    {
+      "src": "android-icon-192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+      "src": "android-icon-512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#ffffff"
+   }
