@@ -78,7 +78,7 @@
             li {
                 margin-left: 1.4em;
                 text-indent: -1.4em;
-                &:first-of-type {
+                &:not(:last-of-type) {
                     margin-bottom: .5rem;
                 }
             }
