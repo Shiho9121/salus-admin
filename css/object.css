@@ -922,7 +922,7 @@
     display: none !important;
   }
 }
-.c-button__delet a {
+.c-button__delet span {
   background-color: #EA6969;
   color: #ffffff;
   font-weight: bold;
@@ -934,13 +934,13 @@
   box-shadow: 0px 3px 8px -4px rgba(0, 0, 0, 0.6);
   transition: all ease-in-out 0.2s;
 }
-.c-button__delet a::before {
+.c-button__delet span::before {
   font-family: "Material Icons";
   font-size: 1.5rem;
   content: "\e92e";
   margin-right: 0.5rem;
 }
-.c-button__delet a:hover {
+.c-button__delet span:hover {
   background-color: #EB5252;
   transition: all ease-in-out 0.2s;
 }
@@ -1053,6 +1053,24 @@
     padding: 0;
   }
 }
+.c-button__dialog {
+  box-shadow: 0px 3px 8px -4px rgba(0, 0, 0, 0.6);
+  font-weight: bold;
+}
+.c-button__dialog--cancel {
+  color: #BDBEBF;
+  background-color: #ffffff;
+  border: 1px solid #D6D6D6;
+  border-radius: 4px;
+  padding: 1rem 2.5rem;
+}
+.c-button__dialog--delete {
+  color: #ffffff;
+  background-color: #EA6969;
+  border-radius: 4px;
+  padding: 1rem 4rem;
+  margin-left: 0.5rem;
+}
 
 .c-loading__pulsar {
   --uib-size: 40px;
@@ -1100,4 +1118,75 @@
     transform: scale(1);
     opacity: 0.25;
   }
+}
+.c-dialog {
+  position: relative;
+}
+.c-dialog #modal-1 {
+  display: none;
+}
+.c-dialog #modal-1.is-open {
+  display: block;
+}
+.c-dialog__open {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  background: rgba(3, 3, 3, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+.c-dialog__wrapper {
+  background-color: #ffffff;
+  padding: 2rem 7rem;
+  position: relative;
+}
+.c-dialog__title {
+  font-size: 2rem;
+  font-weight: bold;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.c-dialog__title::before {
+  font-family: "Material Icons";
+  font-size: 4.5rem;
+  content: "\e002";
+  color: #EA6969;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+.c-dialog__content {
+  margin-top: 1.5rem;
+}
+.c-dialog__content h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.c-dialog__content ul {
+  margin: 1.5rem 0;
+  list-style: disc;
+  list-style-position: inside;
+}
+.c-dialog__content ul li:first-of-type {
+  margin-bottom: 0.5rem;
+}
+.c-dialog__button {
+  text-align: center;
+  padding-top: 2rem;
+}
+.c-dialog__button::before {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  background-color: #BDBEBF;
+  position: absolute;
+  top: 72%;
+  right: 0;
+  z-index: 0;
 }

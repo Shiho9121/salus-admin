@@ -29,7 +29,7 @@
         @include mq() {
             display: none !important;
         }
-        a {
+        span {
             background-color: #EA6969;
             color: #ffffff;
             font-weight: bold;
@@ -154,5 +154,23 @@
                 }
             }
         }    
+    }
+    &__dialog {
+        box-shadow: 0px 3px 8px -4px rgb(0 0 0 / 60%);
+        font-weight: bold;
+        &--cancel {
+            color: #BDBEBF;
+            background-color: #ffffff;
+            border: 1px solid #D6D6D6;
+            border-radius: 4px;
+            padding: 1rem 2.5rem;
+        }
+        &--delete {
+            color: #ffffff;
+            background-color: #EA6969;
+            border-radius: 4px;
+            padding: 1rem 4rem;
+            margin-left: .5rem;
+        }
     }
 }
