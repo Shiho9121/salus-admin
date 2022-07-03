@@ -57,7 +57,7 @@
                 display: block;
                 margin-top: 1.5rem;
             }
-            a {
+            span {
                 background-color: #EA6969;
                 color: #ffffff;
                 font-weight: bold;
@@ -164,6 +164,15 @@
             border: 1px solid #D6D6D6;
             border-radius: 4px;
             padding: 1rem 2.5rem;
+            @include mq(sm) {
+                padding: 1rem;
+            }
+            &:hover {
+                color: #ffffff;
+                background-color: #BDBEBF;
+                border: 1px solid #BDBEBF;
+                transition: all ease-in-out 0.2s;
+            }    
         }
         &--delete {
             color: #ffffff;
@@ -171,6 +180,13 @@
             border-radius: 4px;
             padding: 1rem 4rem;
             margin-left: .5rem;
+            @include mq(sm) {
+                padding: 1rem 2.5rem;
+            }
+            &:hover {
+                background-color: #EB5252;
+                transition: all ease-in-out 0.2s;
+            }    
         }
     }
 }

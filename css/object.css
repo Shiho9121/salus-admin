@@ -953,7 +953,7 @@
     margin-top: 1.5rem;
   }
 }
-.c-button__delet--sp a {
+.c-button__delet--sp span {
   background-color: #EA6969;
   color: #ffffff;
   font-weight: bold;
@@ -965,13 +965,13 @@
   box-shadow: 0px 3px 8px -4px rgba(0, 0, 0, 0.6);
   transition: all ease-in-out 0.2s;
 }
-.c-button__delet--sp a::before {
+.c-button__delet--sp span::before {
   font-family: "Material Icons";
   font-size: 1.5rem;
   content: "\e92e";
   margin-right: 0.5rem;
 }
-.c-button__delet--sp a:hover {
+.c-button__delet--sp span:hover {
   background-color: #EB5252;
   transition: all ease-in-out 0.2s;
 }
@@ -1064,12 +1064,32 @@
   border-radius: 4px;
   padding: 1rem 2.5rem;
 }
+@media screen and (max-width: 599px) {
+  .c-button__dialog--cancel {
+    padding: 1rem;
+  }
+}
+.c-button__dialog--cancel:hover {
+  color: #ffffff;
+  background-color: #BDBEBF;
+  border: 1px solid #BDBEBF;
+  transition: all ease-in-out 0.2s;
+}
 .c-button__dialog--delete {
   color: #ffffff;
   background-color: #EA6969;
   border-radius: 4px;
   padding: 1rem 4rem;
   margin-left: 0.5rem;
+}
+@media screen and (max-width: 599px) {
+  .c-button__dialog--delete {
+    padding: 1rem 2.5rem;
+  }
+}
+.c-button__dialog--delete:hover {
+  background-color: #EB5252;
+  transition: all ease-in-out 0.2s;
 }
 
 .c-loading__pulsar {
@@ -1121,12 +1141,21 @@
 }
 .c-dialog {
   position: relative;
+  z-index: 1;
 }
 .c-dialog #modal-1 {
   display: none;
 }
 .c-dialog #modal-1.is-open {
   display: block;
+}
+.c-dialog #modal-1.is-open[aria-hidden=false] {
+  -webkit-animation: fadeIn 0.3s cubic-bezier(0, 0, 0.2, 1);
+          animation: fadeIn 0.3s cubic-bezier(0, 0, 0.2, 1);
+}
+.c-dialog #modal-1.is-open[aria-hidden=true] {
+  -webkit-animation: fadeOut 0.3s cubic-bezier(0, 0, 0.2, 1);
+          animation: fadeOut 0.3s cubic-bezier(0, 0, 0.2, 1);
 }
 .c-dialog__open {
   position: fixed;
@@ -1142,7 +1171,13 @@
 .c-dialog__wrapper {
   background-color: #ffffff;
   padding: 2rem 7rem;
+  margin: 0 1rem;
   position: relative;
+}
+@media screen and (max-width: 599px) {
+  .c-dialog__wrapper {
+    padding: 1rem;
+  }
 }
 .c-dialog__title {
   font-size: 2rem;
@@ -1161,7 +1196,7 @@
   margin-bottom: 0.5rem;
 }
 .c-dialog__content {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 .c-dialog__content h3 {
   font-size: 1.5rem;
@@ -1172,14 +1207,7 @@
   list-style: disc;
   list-style-position: inside;
 }
-.c-dialog__content ul li:first-of-type {
-  margin-bottom: 0.5rem;
-}
-.c-dialog__button {
-  text-align: center;
-  padding-top: 2rem;
-}
-.c-dialog__button::before {
+.c-dialog__content ul::before {
   content: "";
   display: inline-block;
   width: 100%;
@@ -1189,4 +1217,54 @@
   top: 72%;
   right: 0;
   z-index: 0;
+}
+@media screen and (max-width: 599px) {
+  .c-dialog__content ul::before {
+    top: 77%;
+  }
+}
+.c-dialog__content ul li {
+  margin-left: 1.4em;
+  text-indent: -1.4em;
+}
+.c-dialog__content ul li:first-of-type {
+  margin-bottom: 0.5rem;
+}
+.c-dialog__button {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }

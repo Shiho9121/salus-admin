@@ -145,9 +145,35 @@
                                     <input type="search" placeholder="検索">
                                 </div>    
                             </div>
-                            <div class="c-button__delet df">
-                                <a href="" class="df"><input type="button" value="削除"></a>
-                            </div>
+                            <button data-micromodal-trigger="modal-1" role="button" class="c-button__delet df">
+                                <span class="df">削除</span>
+                            </button>
+                            <div class="c-dialog">
+                                <div id="modal-1" aria-hidden="true">
+                                    <div class="overlay c-dialog__open df" tabindex="-1" data-micromodal-close>
+                                        <div role="dialog" aria-modal="true" aria-labelledby="modal-1-title" class="c-dialog__wrapper">
+                                            <header>
+                                            <h2 class="c-dialog__title df">
+                                                削除
+                                            </h2>
+                                            </header>
+                                            <div class="c-dialog__content">
+                                                <h3>削除してもよろしいでしょうか？</h3>
+                                                <ul>
+                                                    <li>食品添加物から「保存料」をプレスリリース…</li>
+                                                    <li>食品添加物から「保存料」をプレスリリース…</li>
+                                                </ul>
+                                            </div>
+                                            <footer>
+                                                <div class="c-dialog__button">
+                                                    <button class="c-button__dialog c-button__dialog--cancel" aria-label="Close modal" data-micromodal-close>キャンセル</button>
+                                                    <button class="c-button__dialog c-button__dialog--delete" aria-label="Close modal">削除</button>    
+                                                </div>
+                                            </footer>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
                         </div>
                         <div class="p-table">
                             <table>
@@ -317,12 +343,11 @@
                                             <a href="" class="df c-button__edit"><input type="button">編集</a>
                                         </td>    
                                     </tr>
-
                                 </tbody>
                             </table>
-                            <div class="c-button__delet--sp df">
-                                <a href="" class="df"><input type="button" value="削除"></a>
-                            </div>
+                            <button data-micromodal-trigger="modal-1" role="button" class="c-button__delet--sp df">
+                                <span class="df">削除</span>
+                            </button>
                         </div>
                 </div>
             </section>
@@ -334,8 +359,10 @@
 
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
     <script src="../js/loading.js" type="text/javascript"></script>
     <script src="../js/accordion.js" type="text/javascript"></script>
     <script src="../js/menu-sp.js" type="text/javascript"></script>
+    <script src="../js/dialog.js" type="text/javascript"></script>
 </body>
 </html>
